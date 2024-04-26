@@ -1,0 +1,112 @@
+<html>
+    <head>
+      <!-- Titulo de la pagina-->
+        <title>Cooperativa Araucalact</title>
+        <!-- Incorporación archivo CSS para estilos-->
+        <link rel="stylesheet" href="../Desarrollo EVA 2/css/estilos.css">
+        <!-- Incorporación BootsTrap mediante CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body id="Body">
+        <!-- Incorporación de Navbar a la pagina-->
+        <div class = "container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Araucalact </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <!-- Nombres de las secciones de la barra de navegación-->
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link" href="#">Quienes somos</a>
+                      <a class="nav-link" href="#">Productos</a>
+                      <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <!-- Incorporación de Carrusel a la pagina-->
+        <div class = "container-fluid">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Desarrollo EVA 2/img/Vaca1.jpg" class="d-block w-100" alt="Logo">
+              </div>
+              <div class="carousel-item">
+                <img src="../Desarrollo EVA 2/img/Vaca2.jpg" class="d-block w-100" alt="Logo">
+              </div>
+              <div class="carousel-item">
+                <img src="../Desarrollo EVA 2/img/queso1.png" class="d-block w-100" alt="Logo">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+        <!-- Titulo o presentación con el nombre de la cooperativa y "eslogan"-->
+        <div id = "titulo" class = "container-fluid">
+          <h1  align ="center">Cooperativa Araucalact</h1>
+          <h1 align = "center">los mejores lacteos de la Araucanía</h1>
+        </div>
+                <!-- Tarjetas informativas-->
+                <!-- Tarjeta ubicación tienda-->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="../Desarrollo EVA 2/img/stripcenter.jpg" class="card-img-top" alt="Logo">
+                      <div class="card-body">
+                        <h5 class="card-title">Visita nuestras tiendas</h5>
+                        <p class="card-text">Puedes ir a una de nuestras sucursales hubicadas en la ciudad de temuco y encontrar una gran variedad de productos lacteos, todos de la mas alta calidad.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- tarjeta del catálogo-->
+                  <div class="card" style="width: 18rem;">
+                    <img src="../Desarrollo EVA 2/img/tiendalacteos.jpg" class="card-img-top" alt="Logo">
+                    <div class="card-body">
+                      <h5 class="card-title">Revisa nuestro catálogo.</h5>
+                      <p class="card-text">Tenemos una gran cantidad de productos lacteos. Puedes revisarlos haciendo click en el botón.</p>
+                      <a href="#" class="btn btn-primary">Ver catalogo</a>
+                    </div>
+                  </div>
+                  <!-- tarjeta conoce a nuestras vacas-->
+                  <div class="card" style="width: 18rem;">
+                    <img src="../Desarrollo EVA 2/img/Vaca3.jpg" class="card-img-top" alt="Logo">
+                    <div class="card-body">
+                      <h5 class="card-title">¡Conoce a nuestras vacas!</h5>
+                      <p class="card-text">Tenemos una lista con los nombres de todas nuestras vacas ¡con fotos incluidas! Conoce a las responsables de nuestros deliciosos productos.</p>
+                      <a href="#" class="btn btn-primary">Ver vacas</a>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- Texto a continuación de las tarjetas, dando la opción de enviar consulas o preguntas-->
+          <div class = "container">
+            <h4>Si tienes alguna duda o consula, puedes escribirnos en la siguiente sección y estaremos encantados de atenderte.</h4>
+          </div>
+        <!-- Incorporación de formulario a la pagina-->
+        <div class = "container">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Sugerencia o consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <!-- Botón enviar mensaje-->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <button id = "boton" class="btn btn-dark" type="submit">Enviar</button>
+        </div>
+    </body>
+</html>
